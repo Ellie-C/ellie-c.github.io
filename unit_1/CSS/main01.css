@@ -3,12 +3,25 @@ body {
 
 }
 
-h1, p {
+h1 {
+	color: white;
+	text-align: center;
+} 
+
+p {
 	color: white;
 }
 
 .container {
-	text-align: center;
+	padding-top: 50px;
+	text-align: ;
 	margin: auto;
 	max-width: 700px;
+}
+
+.lines_image {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
 }
