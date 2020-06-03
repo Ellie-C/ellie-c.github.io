@@ -23,7 +23,8 @@ var reservationData = {};  //empty object literal where reservation data will be
 //set the day when an option is clicked on
 $('.reservation-day li').on('click', function() {
   reservationData.day = $(this).text();  //define property "day" on the reservationData object, which will have the value of the clicked element's text. This is where someone clicks/chooses a day from the drop-down menu
-
+  $(".reservation-day li").removeClass("selected");
+  $(this).addClass("selected");
 
 });
 
@@ -33,19 +34,36 @@ $('.reservation-day li').on('click', function() {
 $('.reservation-form').on('submit', function(e) {
   e.preventDefault();
 
-  reservationData.name = $('.reservation-name').val(); // Add the name the user entered to the ‘reservationData’ object.
+  var resName = $('.reservation-name').val()
+
+  reservationData.name = resName; // grabbing the name input and adding it to an object called reservationData
+
+  $(".reservation-name").val("");  // empty name input 
 
 // ------- STEP 5 --------
+
+ if (resName === "") {   //form validation for name
+    alert("Please enter your name.");
+    
+  };
+
+    var resDay = $(".selected"); // looking to see if a day has been selected
+
+    if (resDay === undefined) {
+      alert("Please choose a day."); //** Day form validation not working
+    };
 
   // create a section for reservations data in your db; and post from inside the form submit handler
   var reservationsReference = database.ref('reservations');
 
   reservationsReference.push(reservationData); //post or send the reservation "name" data to the database
+
+
 });
 
 //  ----- STEP 6 ------
 
-// retrieve reservations data when page loads and when reservations are added
+// retrieve/fetch reservations data when page loads and when reservations are added
 function getReservations() {
 
   // use reference to database to listen for changes in reservations data
@@ -55,8 +73,8 @@ function getReservations() {
     var allReservations = results.val();
 
     // remove all list reservations from DOM before appending list reservations
-    $('.reservation-name').empty();  //had used .reservations and the whole form would disappear upon loading the page, because I am calling this function every time the page loads
-
+    $('.reservation-list').empty();  //had used .reservations and the whole form would disappear upon loading the page, because I am calling this function every time the page loads. Needed to clear .reservation-List so reseravations don't double load with page reload
+// ** reservation name is not clearing out
     // iterate (loop) through all reservations coming from database call
     for (var reservation in allReservations) {
     // Create an object literal with the data we'll pass to Handlebars
@@ -75,13 +93,10 @@ function getReservations() {
     
     $(".reservation-list").append(reservationListItem); //had .reservations and handlebars template data was overwriting the reservation form. Now the database info appears in the correct place on the web page!
     	
-    };  // somehow every time a resrevation is added the all the reservation data is loaded instead of just the one instance of the new reservation. When I reload the page, its just one instannce of each reservation
+    };  // ** somehow every time a resrevation is added all the reservation data is loaded again instead of just the one instance of the new reservation. When I reload the page, its just one instannce of each reservation
   });
 
 }
-
-// When page loads, get reservations
-getReservations();
 
  // ---- STEPS 7, 8 & 9 ----
 
@@ -91,6 +106,7 @@ function initMap() {
     center: {lat: 40.8054491, lng: -73.9654415},
     zoom: 10,
     scrollwheel: false
+    //styles: [{"featureType":"landscape","stylers":[{"hue":"#FFBB00"},{"saturation":43.400000000000006},{"lightness":37.599999999999994},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#FFC200"},{"saturation":-61.8},{"lightness":45.599999999999994},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":51.19999999999999},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":52},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#0078FF"},{"saturation":-13.200000000000003},{"lightness":2.4000000000000057},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#00FF6A"},{"saturation":-1.0989010989011234},{"lightness":11.200000000000017},{"gamma":1}]}]
   });
 
   var marker = new google.maps.Marker ({
@@ -100,3 +116,6 @@ function initMap() {
   });
 
 }
+
+// When page loads, get reservations
+getReservations();
