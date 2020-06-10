@@ -1,0 +1,49 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: Helvetica, sans-serif;
+
+}
+
+#logo {
+	max-width: 100px;
+	padding-left: 3%;
+}
+
+nav {
+	float: right;
+	text-decoration: none;
+	padding-right: 10%;
+	padding-top: 50px;
+}
+
+#hero {
+	width: 100%;
+	background-image: url()
+}
+
+#header-container {
+	color: white;
+	background-image: url("images/cropped_sunset_marsh.jpg");
+}
+
+#web-design-section {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#web-design-image {
+	display: inline-block;
+	float: right;
+	padding-right: 50px;
+}
+
+#photography-section {
+	float: right;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#photography-image {
+	display: inline-block;
+	float: left;
+	padding-left: 50px;
+}
