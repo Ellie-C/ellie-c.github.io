@@ -36,6 +36,10 @@ nav {
 	padding-right: 50px;
 }
 
+#identity-wrapper {
+	background-color: #e9e2e1;
+}
+
 #identity-section {
 	float: right;
 	padding-left: 100px;
