@@ -36,6 +36,19 @@ nav {
 	padding-right: 50px;
 }
 
+#identity-section {
+	float: right;
+	padding-left: 100px;
+	padding-right: 50px;
+}
+
+#identity-image {
+	display: inline-block;
+	float: left;
+	padding-left: 100px;
+}
+
+
 #photography-section {
 	float: right;
 	padding-left: 50px;
@@ -46,4 +59,8 @@ nav {
 	display: inline-block;
 	float: left;
 	padding-left: 50px;
+}
+
+footer {
+	margin: auto;
 }
