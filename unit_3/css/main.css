@@ -3,65 +3,57 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-#logo {
+.logo {
 	max-width: 100px;
 	padding-left: 3%;
 }
 
 nav {
-	float: right;
 	text-decoration: none;
 	padding-right: 10%;
 	padding-top: 50px;
 }
 
-#hero {
-	width: 100%;
-	background-image: url()
-}
 
-#header-container {
+
+header {
 	color: white;
-	background-image: url("images/cropped_sunset_marsh.jpg");
+	background-image: url("../images/cropped_sunset_marsh.jpg");
+	min-height: 300px;
 }
 
-#web-design-section {
+.web-design {
 	padding-left: 50px;
 	padding-right: 50px;
+	max-height: 300px;s
 }
 
-#web-design-image {
+.web-design-image {
 	display: inline-block;
-	float: right;
 	padding-right: 50px;
+	max-height: 400px;
+	max-width: 500px;
 }
 
-#identity-wrapper {
+.identity {
 	background-color: #e9e2e1;
+	padding-top: 20px;
 }
 
-#identity-section {
-	float: right;
-	padding-left: 100px;
-	padding-right: 50px;
-}
-
-#identity-image {
+.identity-image {
 	display: inline-block;
-	float: left;
 	padding-left: 100px;
+	max-height: 200px;
 }
 
 
 #photography-section {
-	float: right;
 	padding-left: 50px;
 	padding-right: 50px;
 }
 
 #photography-image {
 	display: inline-block;
-	float: left;
 	padding-left: 50px;
 }
 
