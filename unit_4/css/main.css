@@ -1,5 +1,16 @@
+
+/* Roboto Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+
 h1, h2, h3, h4, h5, h6 {
-	font-family: Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+p {
+	font-family: Georgia, serif;
 
 }
 
@@ -14,28 +25,40 @@ nav {
 	padding-top: 50px;
 }
 
-
-
 header {
 	color: white;
 	background-image: url("../images/cropped_sunset_marsh.jpg");
-	min-height: 300px;
+	min-height: 600px;
+}
+
+.headline {
+	font-size: 4em;
+	margin-left: 3%;
+}
+
+.subhead {
+	font-size: 2em;
+	margin-left: 3%;
+	margin-right: 30%;
 }
 
 .web-design {
+	padding-top: 3%;
 	padding-left: 50px;
 	padding-right: 50px;
-	max-height: 300px;s
+	max-height: 600px;
 }
 
 .web-design-image {
-	display: inline-block;
 	padding-right: 50px;
+	padding-bottom: 50px;
 	max-height: 400px;
 	max-width: 500px;
 }
 
 .identity {
+	padding-left: 50px;
+	max-height: 600px;
 	background-color: #e9e2e1;
 	padding-top: 20px;
 }
@@ -48,6 +71,7 @@ header {
 
 
 .photography-section {
+	padding-top: 3%;
 	padding-left: 50px;
 	padding-right: 50px;
 }
@@ -57,6 +81,13 @@ header {
 	padding-left: 50px;
 }
 
+.testimonials {
+	margin-top: 5%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
 footer {
+	text-align: center;
 	margin: auto;
 }
