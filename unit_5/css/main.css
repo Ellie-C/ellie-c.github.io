@@ -1,0 +1,182 @@
+
+/* Roboto Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+/* Oswald Light 300*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+/* Why isn't my h1 font-size styling working? */
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+
+}
+
+p {
+	font-family: Georgia, serif;
+	font-size: 1.2em;
+
+}
+
+hr {
+	color: rgba(142, 144, 145, .5);
+}
+
+header {
+	/*background-image: url("../images/cropped_sunset_marsh.jpg");*/
+	min-height: 100px;
+}
+
+/* position styling for logo not working. Want a cushion of space above and on the left */
+.logo {
+	max-height: 100px;
+	margin: 15%, 0%, 5%, 15%;
+}
+
+/* How do I position the nav in relation to the logo? */
+
+nav {
+	padding-right: 1.5em;
+	padding-left: 35em;
+	display: inline;
+}
+
+nav a {
+	font-size: 1.2em;
+	text-decoration: none;
+	color: rgb(9, 65, 112);
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+a:hover {
+	color: rgba(130, 159, 184, 1);
+}
+
+.first-section {
+	background-color: lightyellow;
+	padding-top: 3em;
+	padding-bottom: 5em;
+	padding-left: 8%;
+	padding-right: 3em;
+	overflow: auto;
+}
+
+
+.first-section h1 {
+	font-size: 3em;
+	max-width: 500px;
+}
+
+.first-section p {
+	font-size: 1.5em;
+	max-width: 500px;
+}
+
+.first-section img {
+	display: inline;
+	max-height: 400px;
+	float: right;
+}
+
+.artecdesign {
+	background-color: black;
+	display: block;
+	min-height: 500px;
+	max-height: 500px;
+	padding: 10px 0;
+	margin: auto;
+}
+
+.web-design {
+	background-color: lightblue;
+	padding-top: 8em;
+	padding-left: 5em;
+	padding-right: 5em;
+	padding-bottom: 8em;
+	max-height: 800px;
+}
+
+
+#web-design-text {
+	float: right;
+	max-width: 400px;
+
+}
+
+.web-design-image {
+	display: inline;
+	padding: 8px;
+	max-height: 350px;
+	filter: drop-shadow(0 0 0.55rem grey);
+}
+
+/* BEGIN PHOTO SECITON HOME PAGE*/
+
+.photo-section-wrapper {
+	background-color: grey;
+	padding-top: 8em;
+	padding-left: 5em;
+	padding-right: 5em;
+	overflow: auto;
+}
+
+/* cannot figure out how to resize Photo section images */
+
+.photo-first-image {
+	max-height: 3em;
+	display: inline;
+	padding: 10px;
+}
+
+.photo-text {
+	max-width: 3em;
+	float: right;
+}
+
+.photo-second-image {
+	float: right;
+	max-width: 100px;
+	display: inline;
+	padding: 10px;
+}
+
+/* END PHOTO section Home page */
+
+/* BEGIN IDENTITY section Home page */
+
+.identity {
+	background-color: pink;
+	padding: 50px;
+	max-height: 600px;
+	/* background-color: #e9e2e1; */
+	padding-top: 20px;
+}
+
+.identity-image {
+	display: inline-block;
+	max-height: 400px;
+	padding-left: 100px;
+	min-height: 150px;
+}
+
+/* END IDENTITY section Home page */
+
+/* TESTIMONIALS */
+
+.testimonials {
+	max-width: 600px;
+	padding: 50px;
+	margin: auto;
+}
+
+footer {
+	text-align: center;
+	padding-top: 2em;
+	margin: auto;
+}
