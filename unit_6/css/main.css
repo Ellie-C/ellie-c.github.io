@@ -38,38 +38,32 @@ hr {
 }
 
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+  	visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
 
 header {
 	/*background-image: url("../images/cropped_sunset_marsh.jpg");*/
 	min-height: 100px;
-	margin: 0 10%;
+	margin: 0 5%;
 	display: block;
-
-	background-color: #FFED74;
-    border: 1px black solid;
-    padding: 20px;
 }
 
 /* position styling for logo not working. Want a cushion of space above and on the left */
 .logo {
-	max-height: 100px;
+	min-height: 100px;
+	max-width: 100px;
 	margin: 15%, 0%, 5%, 15%;
 }
 
-/* How do I position the nav in relation to the logo? */
-
 nav {
-	padding-top: 3em;
 	float: right;
-	display: inline-block;
-
-	background-color: #E8C66A;
-    border: 1px black solid;
-    padding: 20px;
+	display: block;
+	padding: 20px;
 }
 
 nav a {
@@ -77,8 +71,8 @@ nav a {
 	font-size: 1.2em;
 	text-decoration: none;
 	color: rgb(9, 65, 112);
-	padding-left: 5px;
-	padding-right: 5px;
+	margin-top: 40px;
+	margin-left: .75em;
 }
 
 a:hover {
@@ -86,14 +80,9 @@ a:hover {
 }
 
 .first-section {
-	padding-top: 3em;
-	padding-bottom: 5em;
-	margin: 0 5%;
+	margin: 3% 5%;
 	overflow: auto;
-
-	background-color: #FFC675;
-    border: 1px black solid;
-    padding: 20px;
+   /*border: 1px black solid;*/
 }
 
 .first-section-text-wrapper {
@@ -110,6 +99,7 @@ a:hover {
 }
 
 .first-section img {
+	margin-top: 5%;
 	display: inline-block;
 	max-width: 400px;
 	float: right;
@@ -118,29 +108,19 @@ a:hover {
 .artecdesign {
 	display: block;
 	max-width: 800px;
-	padding: 10px 0;
 	margin: 3% auto;
-
-	background-color: #E89C6C;
-    border: 1px black solid;
-    padding: 20px;
 }
 
-.web-design {
-	background-color: lightblue;
+.web-design-wrapper {
 	margin: 5%;
-	max-height: 800px;
-
-
-	background-color: #FFE2B8;
-    border: 1px black solid;
-    padding: 20px;
+	min-height: 300px;
 }
 
 
 #web-design-text {
 	float: right;
 	max-width: 400px;
+	margin-left: 1em;
 
 }
 
@@ -157,9 +137,9 @@ I thought I was supposed to float them all to get them to display in order?*/
 
 .photo-section-wrapper {
 	margin: 3% 5%;
-	min-height: 200px;
+	min-height: 600px;
 
-	background-color: #E89C6C;
+	background-color: #FFB7CF;
     border: 1px black solid;
     padding: 20px;
 }
@@ -168,54 +148,55 @@ I thought I was supposed to float them all to get them to display in order?*/
 	max-width: 400px;
 	display: inline-block;
 	margin: 10px;
+
+	background-color: violet;
+    border: 1px black solid;
+    padding: 20px;
+    float: left;
+    width: 30%;
 }
 
 .photo-text {
-	max-width: 3em;
-	display: inline-block;
+	max-width: 15%;
+	display: block;
 	float: right;
 	margin: 10px;
 }
 
 .photo-second-image img{
 	float: right;
-	max-width: 400px;
-	display: inline-block;
+	max-width: 350px;
+	display: block;
 	margin: 10px;
+
+	background-color: pink;
+    border: 1px black solid;
+    padding: 20px;
+    float: right;   
+    width: 62%;
 }
 
 /* END PHOTO section Home page */
 
 /* BEGIN IDENTITY section Home page */
 
-
-/* Not behaving correctly. Why does the inspector tell me inline-block is wrong? */
-
 .identity-wrapper {
-	margin: 5%;
-	background-color: pink;
+	margin: 5% 10%;
 	min-height: 400px;
-	
-
-	background-color: #FFE2B8;
-    border: 1px black solid;
-    padding: 20px;
-
+	border: 1px black solid;
 }
 
 .identity-text-wrapper {
 	max-width: 400px;
-	display: block;
+	display: inline-block;
 	float: right;
-	margin-left: 5%;
 }
 
 .identity-image {
-	display: block;
+	display: inline-block;
 	max-width: 400px;
 	min-height: 150px;
 	float: right;
-	margin-right: 15%;
 }
 
 /* END IDENTITY section Home page */
@@ -224,27 +205,20 @@ I thought I was supposed to float them all to get them to display in order?*/
 
 .testimonials {
 	max-width: 600px;
-	margin: 5% 25%;
-
-	background-color: #FFC675;
-    border: 1px black solid;
-    padding: 20px;
+	margin: 3% 25% 15% 25%;
 }
 
 footer {
-	margin: 12% 25%;
+	margin: 5% 5%;
 	text-align: center;
-
-	background-color: #FF957E;
-    border: 1px black solid;
-    padding: 20px;
 }
 
 footer a {
 	font-size: 1.25em;
 	text-decoration: none;
 	color: rgb(9, 65, 112);
-	padding-left: 1.75em;
+	margin: .25em;
+	padding: .5em;
 }
 
 
