@@ -1,0 +1,226 @@
+
+/* Roboto Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+/* Oswald Light 300*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+/* Why isn't my h1 font-size styling working? */
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+
+}
+
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+
+}
+
+p {
+	font-family: Georgia, serif;
+	font-size: 1.2em;
+
+}
+
+hr {
+	color: rgba(142, 144, 145, .5);
+}
+
+.clearfix::after {
+  	visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+header {
+	/*background-image: url("../images/cropped_sunset_marsh.jpg");*/
+	min-height: 100px;
+	margin: 0 5%;
+	display: block;
+}
+
+/* position styling for logo not working. Want a cushion of space above and on the left */
+.logo {
+	min-height: 100px;
+	max-width: 100px;
+	margin: 15%, 0%, 5%, 15%;
+}
+
+nav {
+	float: right;
+	display: block;
+	padding: 20px;
+}
+
+nav a {
+	display: inline-block;
+	font-size: 1.2em;
+	text-decoration: none;
+	color: rgb(9, 65, 112);
+	margin-top: 40px;
+	margin-left: .75em;
+}
+
+a:hover {
+	color: rgba(130, 159, 184, 1);
+}
+
+.first-section {
+	margin: 3% 5%;
+	overflow: auto;
+   /*border: 1px black solid;*/
+}
+
+.first-section-text-wrapper {
+	display: inline-block;
+	max-width: 500px
+}
+
+.first-section h1 {
+	font-size: 3em;
+}
+
+.first-section p {
+	font-size: 1.4em;
+}
+
+.first-section img {
+	margin-top: 5%;
+	display: inline-block;
+	max-width: 400px;
+	float: right;
+}
+
+.artecdesign {
+	display: block;
+	max-width: 800px;
+	margin: 3% auto;
+}
+
+.web-design-wrapper {
+	margin: 5%;
+	min-height: 300px;
+}
+
+
+#web-design-text {
+	float: right;
+	max-width: 400px;
+	margin-left: 1em;
+
+}
+
+.web-design-image {
+	display: inline-block;
+	max-width: 600px;
+	filter: drop-shadow(0 0 0.55rem grey);
+}
+
+/* BEGIN PHOTO SECITON HOME PAGE*/
+
+/* if I float all items right, the sectino collapses. 
+I thought I was supposed to float them all to get them to display in order?*/
+
+.photo-section-wrapper {
+	margin: 3% 5%;
+	min-height: 600px;
+
+	background-color: #FFB7CF;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+.photo-first-image img {
+	max-width: 400px;
+	display: inline-block;
+	margin: 10px;
+
+	background-color: violet;
+    border: 1px black solid;
+    padding: 20px;
+    float: left;
+    width: 30%;
+}
+
+.photo-text {
+	max-width: 15%;
+	display: block;
+	float: right;
+	margin: 10px;
+}
+
+.photo-second-image img{
+	float: right;
+	max-width: 350px;
+	display: block;
+	margin: 10px;
+
+	background-color: pink;
+    border: 1px black solid;
+    padding: 20px;
+    float: right;   
+    width: 62%;
+}
+
+/* END PHOTO section Home page */
+
+/* BEGIN IDENTITY section Home page */
+
+.identity-wrapper {
+	margin: 5% 10%;
+	min-height: 400px;
+	border: 1px black solid;
+}
+
+.identity-text-wrapper {
+	max-width: 400px;
+	display: inline-block;
+	float: right;
+}
+
+.identity-image {
+	display: inline-block;
+	max-width: 400px;
+	min-height: 150px;
+	float: right;
+}
+
+/* END IDENTITY section Home page */
+
+/* TESTIMONIALS */
+
+.testimonials {
+	max-width: 600px;
+	margin: 3% 25% 15% 25%;
+}
+
+footer {
+	margin: 5% 5%;
+	text-align: center;
+}
+
+footer a {
+	font-size: 1.25em;
+	text-decoration: none;
+	color: rgb(9, 65, 112);
+	margin: .25em;
+	padding: .5em;
+}
+
+
+
+
