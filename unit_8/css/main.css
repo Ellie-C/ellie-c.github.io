@@ -179,7 +179,7 @@ I thought I was supposed to float them all to get them to display in order?*/
 
 .identity-image {
 	display: inline-block;
-	width: 45%;
+	max-width: 45%;
 	float: right;
 	margin-right: 5%;
 
@@ -230,14 +230,11 @@ footer p {
 	width: 90%;
 }
 
-.first-section-text {
+.first-section-text, .first-section-img {
 	float: none;
-	width: 90%;
-}
-
-.first-section-img {
-	float: none;
-	width: auto;
+	display: block;
+	min-width: auto;
+	margin: auto;
 }
 
 .web-design-text {
@@ -255,8 +252,7 @@ footer p {
 
 .photo-text {
 	float: none;
-	display: inline-block;
-	width: auto;
+	min-width: 90%;
 }
 
 .photo-first-image, .photo-second-image {
@@ -265,7 +261,7 @@ footer p {
 }
 
 .identity-text-wrapper {
-		max-width: 90%;
+		min-width: 90%;
 	}
 
 }
@@ -277,10 +273,11 @@ footer p {
 
 .identity-image {
 	float: none;
-	width: 100%;
+	min-width: 100%;
 }
 
 .testimonials {
+	font-size: 1em;
 	min-width: 80%;
 	margin: 15% 20% 15% 10%; 
 }
