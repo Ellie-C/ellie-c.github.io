@@ -4,7 +4,9 @@
 /* Oswald Light 300*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
-/* Why isn't my h1 font-size styling working? */
+* {
+	box-sizing: border-box;
+}
 
 h1 {
 	font-family: 'Oswald', sans-serif;
@@ -118,7 +120,7 @@ a:hover {
 }
 
 
-#web-design-text {
+.web-design-text {
 	float: right;
 	width: 40%;
 	margin-right: 5%;
@@ -127,7 +129,7 @@ a:hover {
 
 .web-design-image {
 	display: inline-block;
-	max-width: 50%;
+	width: 50%;
 	margin-top: 5%;
 	box-shadow: 0px 3px 10px 6px rgb(204, 203, 203);
 	/*filter: drop-shadow(0 0 0.55rem grey);*/
@@ -148,10 +150,11 @@ I thought I was supposed to float them all to get them to display in order?*/
 .photo-first-image {
 	width: 45%;
 	margin: 10px;
+	float: left;
 }
 
 .photo-text {
-	width: 50%;
+	width: 45%;
 	float: right;
 	margin: 10px;
 }
@@ -167,19 +170,20 @@ I thought I was supposed to float them all to get them to display in order?*/
 /* BEGIN IDENTITY section Home page */
 
 .identity-wrapper {
-	margin: 10% 5% 7% 5%;
+	margin: 10% 5%;
 	/* border: 1px black solid; */
 }
 
 .identity-text-wrapper {
 	width: 45%;
 	margin-left: 5%;
+	float: left;
 	
 }
 
 .identity-image {
 	display: inline-block;
-	max-width: 45%;
+	width: 45%;
 	float: right;
 	margin-right: 5%;
 
@@ -219,22 +223,17 @@ footer p {
 
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
 @media only screen and (max-width: 800px) {
 
-  }
-} 
-
-@media only screen and (max-width: 480px) {
-
 .first-section-wrapper {
-	width: 90%;
+	width: 100%;
 }
 
-.first-section-text, .first-section-img {
+.first-section-text, .first-section-image {
 	float: none;
 	display: block;
-	min-width: auto;
-	margin: auto;
+	margin: 5%;
 }
 
 .web-design-text {
@@ -244,10 +243,10 @@ footer p {
 
 }
 
-.web-design-img {
+.web-design-image {
 	display: block;
 	float: none;
-	width: 90%;
+	width: 100%;
 }
 
 .photo-text {
@@ -267,13 +266,13 @@ footer p {
 }
 
 .identity-text-wrapper {
-	float: none;
-	width: auto;
 }
 
 .identity-image {
 	float: none;
-	min-width: 100%;
+	margin: auto;
+	width: 80%;
+	
 }
 
 .testimonials {
