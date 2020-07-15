@@ -75,7 +75,7 @@ header {
 	font-size: 1.3em;
 	text-decoration: none;
 	color: rgb(9, 65, 112);
-	margin-top: 40px;
+	margin-top: 1.25em;
 	margin-left: .75em;
 }
 
@@ -128,7 +128,7 @@ a:hover {
 .web-design-image {
 	display: inline-block;
 	max-width: 50%;
-	margin-top: 4%;
+	margin-top: 5%;
 	box-shadow: 0px 3px 10px 6px rgb(204, 203, 203);
 	/*filter: drop-shadow(0 0 0.55rem grey);*/
 }
@@ -217,14 +217,16 @@ footer p {
 	margin-top: 40px;
 }
 
-.social-icons {
+.social-icons, .footer-social-icons{
 	width: 25px;
 }
 
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media only screen and (max-width: 800px) {
-  
+  .web-design-text, .web-design-img {
+	float: none;
+	width: auto;
 
 
   }
@@ -232,10 +234,13 @@ footer p {
 
 @media only screen and (max-width: 480px) {
 
+.first-section-wrapper {
+	width: 90%;
+}
+
 .first-section-text {
 	float: none;
-	width: auto;
-	display: none;
+	width: 90%;
 }
 
 .first-section-img {
@@ -250,7 +255,13 @@ footer p {
 
 .photo-text {
 	float: none;
+	display: inline-block;
 	width: auto;
+}
+
+.photo-first-image, .photo-second-image {
+	width: 45%;
+	margin: 2%;
 }
 
 .identity-text-wrapper {
@@ -259,5 +270,28 @@ footer p {
 
 }
 
+.identity-text-wrapper {
+	float: none;
+	width: auto;
+}
+
+.identity-image {
+	float: none;
+	width: 100%;
+}
+
+.testimonials {
+	width: 100%;
+	margin: 15% 30% 15% 10%; /* why is the testimonials P running off the side of the screen?*/
+}
+
+.footer a {
+	display: inline-block;
+	margin: 10%;
+}
+
+.footer-social-icons {
+	padding-top: 1em;
+}
 
 
