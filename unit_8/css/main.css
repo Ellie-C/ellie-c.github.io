@@ -61,7 +61,6 @@ header {
 /* position styling for logo not working. Want a cushion of space above and on the left */
 .logo {
 	height: 100px;
-	width: 100px;
 	padding-top: 10px;
 	margin: 15%, 0%, 5%, 15%;
 }
@@ -113,7 +112,7 @@ a:hover {
 }
 
 .web-design-wrapper {
-	margin: 7% 7% 10% 7%;
+	margin: 10% 7% 10% 7%;
 	max-width: 90%;
 
 	/*border: 1px pink solid;*/
@@ -130,7 +129,6 @@ a:hover {
 .web-design-image {
 	display: inline-block;
 	width: 50%;
-	margin-top: 5%;
 	box-shadow: 0px 3px 10px 6px rgb(204, 203, 203);
 	/*filter: drop-shadow(0 0 0.55rem grey);*/
 }
@@ -141,28 +139,26 @@ a:hover {
 I thought I was supposed to float them all to get them to display in order?*/
 
 .photo-section-wrapper {
-	margin: 5% 5% 7% 5%;
+	margin: 10% 5%;
 
    /* border: 1px black solid; */
  
 }
 
 .photo-first-image {
-	width: 45%;
-	margin: 10px;
+	max-width: 46%;
 	float: left;
 }
 
 .photo-text {
-	width: 45%;
+	max-width: 46%;
 	float: right;
-	margin: 10px;
 }
 
 .photo-second-image{
 	float: right;
-	width: 45%;
-	margin: 10px;
+	max-width: 46%;
+	margin-top: 1.5em;
 }
 
 /* END PHOTO section Home page */
@@ -170,22 +166,21 @@ I thought I was supposed to float them all to get them to display in order?*/
 /* BEGIN IDENTITY section Home page */
 
 .identity-wrapper {
-	margin: 10% 5%;
+	margin: 12% 5%;
 	/* border: 1px black solid; */
 }
 
 .identity-text-wrapper {
-	width: 45%;
-	margin-left: 5%;
+	max-width: 45%;
+	margin: 0% 2%;
 	float: left;
 	
 }
 
 .identity-image {
-	display: inline-block;
 	width: 45%;
 	float: right;
-	margin-right: 5%;
+	margin: 0% 2%;
 
 }
 
@@ -230,16 +225,25 @@ footer p {
 	width: 100%;
 }
 
-.first-section-text, .first-section-image {
+.first-section-text {
 	float: none;
 	display: block;
-	margin: 5%;
+	margin: 15% 15% 10% 15%;
+	max-width: 80%;
+}
+
+.first-section-image {
+	float: none;
+	display: block;
+	margin: 10% 15% 15% 15%;
+	max-width: 75%;
 }
 
 .web-design-text {
 	display: block;
 	float: none;
 	width: auto;
+	padding-bottom: 1.5em;
 
 }
 
@@ -251,7 +255,7 @@ footer p {
 
 .photo-text {
 	float: none;
-	min-width: 90%;
+	max-width: 90%;
 }
 
 .photo-first-image, .photo-second-image {
@@ -259,19 +263,19 @@ footer p {
 	margin: 2%;
 }
 
+.identity-wrapper {
+	width: 100%;
+}
+
 .identity-text-wrapper {
-		min-width: 90%;
+		float: none;
+		max-width: 90% ;
 	}
-
-}
-
-.identity-text-wrapper {
-}
 
 .identity-image {
 	float: none;
 	margin: auto;
-	width: 80%;
+	width: 70%;
 	
 }
 
