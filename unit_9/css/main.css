@@ -1,0 +1,325 @@
+
+/* Roboto Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+/* Oswald Light 300*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+
+}
+
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.5em;
+
+}
+
+h3 {
+	font-size: 1.75em;
+}
+
+h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+
+}
+
+body {
+	font-size: 16px;
+}
+
+p {
+	font-family: Georgia, serif;
+	font-size: 1.2em;
+
+}
+
+hr {
+	color: rgba(142, 144, 145, .5);
+}
+
+.clearfix::after {
+  	visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+header {
+	margin: 0 10% 0% 6% ;
+	display: block;
+	/*border: 1px orange solid;*/
+}
+
+/* position styling for logo not working. Want a cushion of space above and on the left */
+.logo {
+	height: 100px;
+	padding-top: 10px;
+	margin: 15%, 0%, 5%, 15%;
+}
+
+.topnav {
+	float: right;
+	display: block;
+	padding: 20px;
+
+	overflow: hidden;
+}
+
+.topnav a {
+	display: inline-block;
+	font-size: 1.3em;
+	text-decoration: none;
+	color: rgb(9, 65, 112);
+	margin-top: 1.25em;
+	margin-left: .75em;
+}
+
+.topnav a:hover {
+	color: rgba(130, 159, 184, 1);
+}
+
+.topnav a.active {
+	color: rgba(130, 159, 184, 1);;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+.first-section-wrapper {
+   margin: 3% 5% 5% 5%;
+   /*border: 1px orange solid;*/
+}
+
+.first-section-text {
+	display: inline-block;
+	max-width: 50%;
+	margin: 3% 3% 0 2%;
+}
+
+.first-section-text h1 {
+	font-size: 3em;
+}
+
+.first-section-text p {
+	font-size: 1.6em;
+	margin-top: -20px;
+}
+
+.first-section-image {
+	margin-top: 5%;
+	margin-right: 5%;
+	float: right;
+	max-width: 40%;
+}
+
+.web-design-wrapper {
+	margin: 10% 7% 10% 7%;
+	max-width: 90%;
+
+	/*border: 1px pink solid;*/
+}
+
+
+.web-design-text {
+	float: right;
+	width: 40%;
+	margin-right: 5%;
+
+}
+
+.web-design-image {
+	display: inline-block;
+	width: 50%;
+	box-shadow: 0px 3px 10px 6px rgb(204, 203, 203);
+	/*filter: drop-shadow(0 0 0.55rem grey);*/
+}
+
+/* BEGIN PHOTO SECITON HOME PAGE*/
+
+/* if I float all items right, the sectino collapses. 
+I thought I was supposed to float them all to get them to display in order?*/
+
+.photo-section-wrapper {
+	margin: 10% 5%;
+
+   /* border: 1px black solid; */
+ 
+}
+
+.photo-first-image {
+	max-width: 46%;
+	float: left;
+}
+
+.photo-text {
+	max-width: 46%;
+	float: right;
+}
+
+.photo-second-image{
+	float: right;
+	max-width: 46%;
+	margin-top: 1.5em;
+}
+
+/* END PHOTO section Home page */
+
+/* BEGIN IDENTITY section Home page */
+
+.identity-wrapper {
+	margin: 12% 5%;
+	/* border: 1px black solid; */
+}
+
+.identity-text-wrapper {
+	max-width: 45%;
+	margin: 0% 2%;
+	float: left;
+	
+}
+
+.identity-image {
+	width: 45%;
+	float: right;
+	margin: 0% 2%;
+
+}
+
+/* END IDENTITY section Home page */
+
+/* TESTIMONIALS */
+
+.testimonials {
+	max-width: 50%;
+	margin: 15% 25%;
+}
+
+footer {
+	margin: 5% 0% 0% 0%;
+	text-align: center;
+	background-color: rgb(204, 203, 203);
+	padding: 4% 0% 2% 0%;
+}
+
+footer a {
+	font-size: 1.25em;
+	text-decoration: none;
+	color: rgb(9, 65, 112);
+	margin: 1.5% 1.5% 0% 1.5%;
+	padding: .25em;
+}
+
+footer p {
+	margin-top: 40px;
+}
+
+.social-icons, .footer-social-icons{
+	width: 25px;
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media only screen and (max-width: 800px) {
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+.first-section-wrapper {
+	width: 100%;
+}
+
+.first-section-text {
+	float: none;
+	display: block;
+	margin: 15% 15% 10% 15%;
+	max-width: 80%;
+}
+
+.first-section-image {
+	float: none;
+	display: block;
+	margin: 10% 15% 15% 15%;
+	max-width: 75%;
+}
+
+.web-design-text {
+	display: block;
+	float: none;
+	width: auto;
+	padding-bottom: 1.5em;
+
+}
+
+.web-design-image {
+	display: block;
+	float: none;
+	width: 100%;
+}
+
+.photo-text {
+	float: none;
+	max-width: 90%;
+}
+
+.photo-first-image, .photo-second-image {
+	width: 45%;
+	margin: 2%;
+}
+
+.identity-wrapper {
+	width: 100%;
+}
+
+.identity-text-wrapper {
+		float: none;
+		max-width: 90% ;
+	}
+
+.identity-image {
+	float: none;
+	margin: auto;
+	width: 70%;
+	
+}
+
+.testimonials {
+	font-size: 1em;
+	min-width: 80%;
+	margin: 15% 20% 15% 10%; 
+}
+
+.footer a {
+	display: inline-block;
+	margin: 10%;
+}
+
+.footer-social-icons {
+	padding-top: 1em;
+}
+
+
