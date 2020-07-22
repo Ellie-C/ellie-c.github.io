@@ -79,7 +79,6 @@ header {
 
 .topnav {
 	float: right;
-	display: block;
 	padding: 1.5em;
 
 	background-color: white;
@@ -107,6 +106,8 @@ header {
   display: none;
 }
 
+
+/* BEGIN FIRST SECTION */
 
 .first-section-wrapper {
    margin: 5%;
@@ -325,16 +326,19 @@ footer p {
 
   .topnav a {
   	display: none;
+
   }
   .topnav a.icon {
     float: right;
     display: block;
-    font-size: 2em;
+    font-size: 3em;
+    margin-top: .5em;
   }
 
   .topnav.responsive {
   	position: relative;
   }
+
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
